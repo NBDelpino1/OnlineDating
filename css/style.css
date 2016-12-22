@@ -1,0 +1,66 @@
+/*#328aa1*/
+/*#1a90af*/
+
+/* Navbar Styling */
+.navbar-inverse {
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background-color: #009688;
+    border-color: #009688;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*border-bottom: solid 2px black;*/
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: black;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #009688;
+}
+
+.navbar-inverse .navbar-toggle:focus{
+    background-color: #009688;
+
+}
+
+.navbar-inverse .navbar-toggle:hover , .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #009688;
+}
+
+
+/* Landing Image Responsiveness*/
+.landingImage {
+    /*width will be 100% width of the browser size as the broswer size adjusts*/
+    width:100%;
+}
+
+
+#content {
+    padding-top: 30px;
+}
+
+
+#footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #009688;
+}
+
+i {
+    color: #009688;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    /*margin-top: 20px;*/
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2em;
+}
+
