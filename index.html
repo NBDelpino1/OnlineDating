@@ -21,112 +21,142 @@
 </head>
 <body>
 <!-- Main Container -->
-    <div class="container">
+    <div class="container" id="main">
 
         <!-- Navbar -->
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Match</a>
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Match</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
-        <!-- Landing Image -->
-        <img src="images/landing.jpeg" alt="Landing image" class="landingImage">
+        <!-- Main Image -->
+        <div class="container">
+            <img src="images/landing.jpeg" alt="Landing image" class="mainImage">
+        </div>
 
-        <!-- Some Content -->
-        <div class="container " id="content">
+        <!-- Center Links Container -->
+        <div class="container text-right" id="centerLinksContainer">
             <div class="row">
-                <div class="col-sm-9">
-                    <i class="content">About</i>
-                    <i class="content">Testimonials</i>
-                    <i class="content">Tour</i>
-                    <i class="content">Espanol</i>
+                <div class="col-sm-6 text-center" id="leftCenterLinksColumn">
+                    <a class="leftCenterLink"><strong>About</strong></a>
+                    <a class="leftCenterLink"><strong>Testimonials</strong></a>
+                    <a class="leftCenterLink"><strong>Tour</strong></a>
+                    <a class="leftCenterLink"><strong>Espanol</strong></a>
                 </div>
-                <div class="col-sm-3">
-                    <i class="fa fa-youtube" style="font-size:40px"></i>
-                    <i class="fa fa-twitter-square" style="font-size:40px"></i>
-                    <i class="fa fa-facebook-official" style="font-size:40px"></i>
+                <div class="col-sm-6 text-right" id="rightCenterLinksColumn">
+                    <a href="#"><i class="fa fa-youtube" style="font-size:40px"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" style="font-size:40px"></i></a>
+                    <a href="#"><i class="fa fa-facebook-official" style="font-size:40px"></i></a>
                 </div>
             </div>
         </div>
 
-        <!-- Security Images -->
-        <div class="container-fluid text-center">
+        <!-- Secondary Image -->
+        <div class="container text-center">
             <div class="row">
                 <div class="col-sm-12">
-                    <!--class="landingImage"-->
-                    <img src="images/fakeauth.png" class="landingImage">
+                    <!--class="mainImage"-->
+                    <!--TODO - Need to make this image responsive - adding mainImage class works on mobile but not desktop-->
+                    <img src="images/fakeauth.png">
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
-        <nav class="navbar navbar-default" id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <ul style="list-style-type:none">
-                            <li><a>About Match</a></li>
-                            <li><a>Why Match</a></li>
-                            <li><a>Match Tour</a></li>
-                            <li><a>Testimonials</a></li>
-                            <li><a>Match Espanol</a></li>
-                            <li><a>Match Subscription</a></li>
-                            <li><a>Match Promotions</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <ul style="list-style-type:none">
-                            <li><a>Match Careers</a></li>
-                            <li><a>Affiliates</a></li>
-                            <li><a>Terms & Conditions</a></li>
-                            <li><a>Safety Tips</a></li>
-                            <li><a>Privacy</a></li>
-                            <li><a>Compatible Browsers</a></li>
-                            <li><a>Help</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <ul style="list-style-type:none">
-                            <li><a>Asian Dating</a></li>
-                            <li><a>Black Dating</a></li>
-                            <li><a>Christian Dating</a></li>
-                            <li><a>Senior Dating</a></li>
-                            <li><a>Jewish Dating</a></li>
-                            <li><a>Hispanic Dating</a></li>
-                            <li><a>Local Dating</a></li>
-                            <li><a>Match Members</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <ul style="list-style-type:none">
-                            <li><a class="altcolor">Match Blog</a></li>
-                            <li><a class="altcolor">Dating Advice</a></li>
-                            <li><a class="altcolor">First Dates</a></li>
-                            <li><a class="altcolor">Relationship Advice</a></li>
-                            <li><a class="altcolor">Dating Tips</a></li>
-                            <li><a class="altcolor">Date Ideas</a></li>
-                        </ul>
+        <!--TODO - Need to improve on column layout when mobile - as is columns are stacked on ontop the other - dont like that-->
+        <div class="container">
+            <nav class="navbar navbar-default" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <ul style="list-style-type:none">
+                                <li><a>About Match</a></li>
+                                <li><a>Why Match</a></li>
+                                <li><a>Match Tour</a></li>
+                                <li><a>Testimonials</a></li>
+                                <li><a>Match Espanol</a></li>
+                                <li><a>Match Subscription</a></li>
+                                <li><a>Match Promotions</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul style="list-style-type:none">
+                                <li><a>Match Careers</a></li>
+                                <li><a>Affiliates</a></li>
+                                <li><a>Terms & Conditions</a></li>
+                                <li><a>Safety Tips</a></li>
+                                <li><a>Privacy</a></li>
+                                <li><a>Compatible Browsers</a></li>
+                                <li><a>Help</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul style="list-style-type:none">
+                                <li><a>Asian Dating</a></li>
+                                <li><a>Black Dating</a></li>
+                                <li><a>Christian Dating</a></li>
+                                <li><a>Senior Dating</a></li>
+                                <li><a>Jewish Dating</a></li>
+                                <li><a>Hispanic Dating</a></li>
+                                <li><a>Local Dating</a></li>
+                                <li><a>Match Members</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul style="list-style-type:none">
+                                <li><a class="rightSideFooterLinks">Match Blog</a></li>
+                                <li><a class="rightSideFooterLinks">Dating Advice</a></li>
+                                <li><a class="rightSideFooterLinks">First Dates</a></li>
+                                <li><a class="rightSideFooterLinks">Relationship Advice</a></li>
+                                <li><a class="rightSideFooterLinks">Dating Tips</a></li>
+                                <li><a class="rightSideFooterLinks">Date Ideas</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+
+        <!--Login Form-->
+        <div class="container" id="loginform">
+            <form>
+                <h2>Member login</h2>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-default btn-block "><span class="glyphicon glyphicon-log-in"></span> Login</button>
+                <br>
+                <div class="form-group text-right">
+                   <a>Register here</a>
+                </div>
+            </form>
+        </div>
 
     </div>
-
 </body>
 </html>
 
