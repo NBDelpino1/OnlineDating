@@ -8,7 +8,7 @@
     <title>Match.com Bootstrap</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- My CSS -->
@@ -34,14 +34,14 @@
                     <li><a href="#services">SERVICES</a></li>
                     <li><a href="#tesitmonials">TESTIMONIALS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
-                    <li><a href="#">LOGIN <span class="glyphicon glyphicon-user login" aria-hidden="true"></span></a></li>
+                    <li><a href="#">LOGIN <span class="glyphicon glyphicon-user navIcon" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="container-fluid fullscreen">
+    <div class="container-fluid containerWithoutPadding">
         <!-- Wrapper for image -->
         <div class="carousel-inner">
             <div class="item active">
@@ -53,7 +53,7 @@
     <!--Login Form-->
     <div id="loginForm" class="container">
         <form>
-            <h3 class="logintext">MEMBER LOGIN</h3>
+            <h3 class="loginCTA">MEMBERS LOGIN</h3>
             <div class="form-group">
                 <label for="emailLogin">EMAIL ADDRESS</label>
                 <input type="email" class="form-control" id="emailLogin">
@@ -63,10 +63,10 @@
                 <input type="password" class="form-control" id="pwd">
             </div>
             <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
+                <label class="formSecText"><input type="checkbox"> REMEMBER ME</label>
             </div>
             <div class="rememberMe">
-                <label for="pwd"><a class="yellow">Register Now</a></label>
+                <label class="formSecText"><a class="yellowText">REGISTER HERE</a></label>
             </div>
             <button type="submit" class="btn btn-default">SUBMIT</button>
         </form>
@@ -75,7 +75,7 @@
 
     <div class="container">
         <!-- About Section -->
-        <div id="about" class="container-fluid pad">
+        <div id="about" class="container-fluid containerWithPadding">
             <div class="row">
                 <div class="col-sm-8">
                     <h2 >ABOUT US</h2>
@@ -88,15 +88,15 @@
                     <button class="btn btn-default btn-lg">Get in Touch</button>
                 </div>
                 <div class="col-sm-4">
-                    <i class="fa fa-building-o about slideanim" aria-hidden="true"></i>
+                    <i class="fa fa-building-o aboutIcon slideanim" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
 
-        <div id="values" class="container-fluid pad">
+        <div id="values" class="container-fluid containerWithPadding">
             <div class="row">
                 <div class="col-sm-4">
-                    <i class="fa fa-handshake-o about slideanim" aria-hidden="true"></i>
+                    <i class="fa fa-handshake-o aboutIcon slideanim" aria-hidden="true"></i>
                 </div>
                 <div class="col-sm-8">
                     <h2>OUR MISSION</h2>
@@ -108,48 +108,48 @@
         </div>
     </div>
 
-    <div id="services" class="container-fluid pad text-center">
-        <h2 class="yellow">SERVICES</h2>
+    <div id="services" class="container-fluid containerWithPadding text-center">
+        <h2 class="yellowText">SERVICES</h2>
         <br>
         <div class="row slideanim">
             <div class="col-sm-4">
-                <i class="fa fa-search-plus servicesIcons" aria-hidden="true"></i>
-                <h4 class="white">FIND A MATCH</h4>
+                <i class="fa fa-search-plus serviceIcon" aria-hidden="true"></i>
+                <h4 class="whiteText">FIND A MATCH</h4>
                 <p>Lorem ipsum dolor sit amet..</p>
             </div>
             <div class="col-sm-4">
-                <i class="fa fa-heart-o servicesIcons" aria-hidden="true"></i>
-                <h4 class="white">DATING ADVICE</h4>
+                <i class="fa fa-heart-o serviceIcon" aria-hidden="true"></i>
+                <h4 class="whiteText">DATING ADVICE</h4>
                 <p>Lorem ipsum dolor sit amet..</p>
             </div>
             <div class="col-sm-4">
-                <i class="fa fa-users servicesIcons" aria-hidden="true"></i>
-                <h4 class="white">RELATIONSHIP ADVICE</h4>
+                <i class="fa fa-users serviceIcon" aria-hidden="true"></i>
+                <h4 class="whiteText">RELATIONSHIP ADVICE</h4>
                 <p>Lorem ipsum dolor sit amet..</p>
             </div>
         </div>
         <br><br>
         <div class="row slideanim">
             <div class="col-sm-4">
-                <i class="fa fa-pencil servicesIcons" aria-hidden="true"></i>
-                <h4 class="white">DATING TIPS</h4>
+                <i class="fa fa-pencil serviceIcon" aria-hidden="true"></i>
+                <h4 class="whiteText">DATING TIPS</h4>
                 <p>Lorem ipsum dolor sit amet..</p>
             </div>
             <div class="col-sm-4">
-                <i class="fa fa-question-circle-o servicesIcons" aria-hidden="true"></i>
-                <h4 class="white">DATE IDEAS</h4>
+                <i class="fa fa-question-circle-o serviceIcon" aria-hidden="true"></i>
+                <h4 class="whiteText">DATE IDEAS</h4>
                 <p>Lorem ipsum dolor sit amet..</p>
             </div>
             <div class="col-sm-4">
-                <i class="fa fa-calendar-check-o servicesIcons" aria-hidden="true"></i>
-                <h4 class="white">FIRST DATES</h4>
+                <i class="fa fa-calendar-check-o serviceIcon" aria-hidden="true"></i>
+                <h4 class="whiteText">FIRST DATES</h4>
                 <p>Lorem ipsum dolor sit amet..</p>
             </div>
         </div>
     </div>
 
     <!-- Testimonials Section-->
-    <div id="tesitmonials" class="container-fluid pad text-center">
+    <div id="tesitmonials" class="container-fluid containerWithPadding text-center">
         <h2>TESTIMONIALS</h2>
         <div class="row text-center">
             <div class="col-sm-4">
@@ -171,7 +171,7 @@
     </div>
 
     <!-- Testimonial Carousel -->
-    <h2 class="text-center noMarginBottom">What our customers say</h2>
+    <h2 class="text-center h4_WithoutMarginTopBottom">What our customers say</h2>
     <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -183,13 +183,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <h4>" Never thought we would find love online, we are glad we took the chance!! "<br><span style="font-style:normal;">.....Yavi Padilla &amp Eva Sanchez, Brooklyn NY</span></h4>
+                <h4 class="blackText">" Never thought we would find love online, we are glad we took the chance!! "<br><span style="font-style:normal;">.....Yavi Padilla &amp Eva Sanchez, Brooklyn NY</span></h4>
             </div>
             <div class="item">
-                <h4>" We were truly blessed to find a place where we could connect and eventually become soul mates "<br><span style="font-style:normal;">James and John Parker, Seattle WA</span></h4>
+                <h4 class="blackText">" We were truly blessed to find a place where we could connect and eventually become soul mates "<br><span style="font-style:normal;">James and John Parker, Seattle WA</span></h4>
             </div>
             <div class="item">
-                <h4>" 4 months in and we still can't believe it. This site works hard to make sure like minded people are connected "<br><span style="font-style:normal;">Jamie Jesip &amp Trey Loghorn, Atlanta GA</span></h4>
+                <h4 class="blackText">" 4 months in and we still can't believe it. This site works hard to make sure like minded people are connected "<br><span style="font-style:normal;">Jamie Jesip &amp Trey Loghorn, Atlanta GA</span></h4>
             </div>
         </div>
 
@@ -205,8 +205,8 @@
     </div>
 
     <!-- Contact Section -->
-    <div id="contact" class="container-fluid pad">
-        <h2 class="text-center yellow">CONTACT</h2>
+    <div id="contact" class="container-fluid containerWithPadding">
+        <h2 class="text-center yellowText">CONTACT</h2>
         <div class="row">
             <div class="col-sm-5">
                 <p>Contact us and we'll get back to you within 24 hours.</p>
@@ -236,12 +236,12 @@
     <!-- Footer -->
     <footer class="container-fluid text-center">
         <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up footarrow"></span>
+            <span class="glyphicon glyphicon-chevron-up footerNavArrow"></span>
         </a>
         <p>
-            <a href="#"> <i class="fa fa-youtube footicon" ></i></a>
-            <a href="#"><i class="fa fa-twitter-square footicon" ></i></a>
-            <a href="#"><i class="fa fa-facebook-official footicon"></i></a>
+            <a href="#"> <i class="fa fa-youtube footerIcon" ></i></a>
+            <a href="#"><i class="fa fa-twitter-square footerIcon" ></i></a>
+            <a href="#"><i class="fa fa-facebook-official footerIcon"></i></a>
         </p>
     </footer>
 
