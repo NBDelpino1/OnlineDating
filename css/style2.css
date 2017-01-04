@@ -333,10 +333,16 @@ footer {
 /* FORM */
 /*===========================================================================================================================*/
 
+
+/* Help Position Form */
+body {
+    position: relative;
+}
+
 /* Layout */
 form {
     position: absolute;
-    bottom: 500px;
+    bottom: 85%;
     right: 70px;
     background-color: #AC0040;
     color: #FFFFFF;
@@ -346,6 +352,17 @@ form {
     width:35%;
 }
 
+
+
+/* Form Position When Mobile */
+@media only screen and (max-width: 500px) {
+    form {
+        width: 100%; /* Set width to 100% */
+        position: static;
+        bottom: 60%;
+
+    }
+}
 /* Input Box Square Corners */
 .form-control {
     border-radius: 0;
@@ -362,35 +379,10 @@ form {
     font-size: 10px;
 }
 
-/* Help Position Form */
-.carousel-inner {
-    position: relative;
-}
-
-/* Form Position When Mobile */
-@media only screen and (max-width: 500px) {
-    form {
-        width: 100%; /* Set width to 100% */
-        position: static;
-        bottom: 0;
-        right: 0;
-
-    }
-}
 
 /*===========================================================================================================================*/
 /* END */
 /*===========================================================================================================================*/
-
-
-
-
-
-
-
-
-
-
 
 
 
