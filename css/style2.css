@@ -94,6 +94,69 @@ h4 {
     font-size: 15px;
 }
 
+
+/*===========================================================================================================================*/
+/* PAGE BUTTONS */
+/*===========================================================================================================================*/
+
+/* Button Styling */
+.btn-default {
+    background-color: #FBB024;
+    border-color: #FBB024;
+    border-radius:0;
+    width:150px;
+    letter-spacing: 4px;
+}
+
+/*===========================================================================================================================*/
+/* FORM */
+/*===========================================================================================================================*/
+
+/* Help Position Form */
+body {
+    position: relative;
+}
+
+/* Layout */
+form {
+    position: absolute;
+    bottom: 85%;
+    right: 70px;
+    background-color: #AC0040;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    font-family: 'Raleway', sans-serif;
+    padding:20px;
+    width:35%;
+}
+
+
+/* Form Position When Mobile */
+@media only screen and (max-width: 500px) {
+    form {
+        width: 100%; /* Set width to 100% */
+        position: static;
+        bottom: 60%;
+
+    }
+}
+/* Input Box Square Corners */
+.form-control {
+    border-radius: 0;
+}
+
+/* Member Login Text Styling*/
+.loginCTA {
+    font-family: 'Raleway', sans-serif;
+    color: #FBB024;
+}
+
+/* Secondary Text Inside Form */
+.formSecText {
+    font-size: 10px;
+}
+
+
 /*===========================================================================================================================*/
 /* HERO STYLING */
 /*===========================================================================================================================*/
@@ -315,70 +378,10 @@ footer {
     padding-right: 25px;
 }
 
-
-/*===========================================================================================================================*/
-/* PAGE BUTTONS */
-/*===========================================================================================================================*/
-
-/* Button Styling */
-.btn-default {
-    background-color: #FBB024;
-    border-color: #FBB024;
-    border-radius:0;
-    width:150px;
-    letter-spacing: 4px;
-}
-
-/*===========================================================================================================================*/
-/* FORM */
-/*===========================================================================================================================*/
-
-
-/* Help Position Form */
-body {
-    position: relative;
-}
-
-/* Layout */
-form {
-    position: absolute;
-    bottom: 85%;
-    right: 70px;
-    background-color: #AC0040;
-    color: #FFFFFF;
-    letter-spacing: 4px;
-    font-family: 'Raleway', sans-serif;
-    padding:20px;
-    width:35%;
-}
-
-
-
-/* Form Position When Mobile */
-@media only screen and (max-width: 500px) {
-    form {
-        width: 100%; /* Set width to 100% */
-        position: static;
-        bottom: 60%;
-
-    }
-}
-/* Input Box Square Corners */
-.form-control {
-    border-radius: 0;
-}
-
-/* Member Login Text Styling*/
-.loginCTA {
-    font-family: 'Raleway', sans-serif;
+/* Footer Icons Change Color on Hover */
+.footerIcon:hover {
     color: #FBB024;
 }
-
-/* Secondary Text Inside Form */
-.formSecText {
-    font-size: 10px;
-}
-
 
 /*===========================================================================================================================*/
 /* END */
