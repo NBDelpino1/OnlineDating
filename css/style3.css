@@ -1,0 +1,368 @@
+/*===========================================================================================================================*/
+/* NAVBAR STYLING */
+/*===========================================================================================================================*/
+
+/* Navbar Color */
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    color: #FBB024;
+}
+
+/* General Navbar Styling */
+.navbar {
+    margin-bottom: 0;
+    background-color: #AC0040;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Navbar Link Styling */
+.navbar li a, .navbar .navbar-brand {
+    color: #fff;
+}
+
+/* When User hovers over Navbar Link */
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #FBB024 !important;
+    background-color: #fff !important;
+}
+
+/*  Hamburger color */
+.navbar-toggle .icon-bar {
+
+    background-color: #FFFFFF;
+}
+
+/*===========================================================================================================================*/
+/* HERO STYLING */
+/*===========================================================================================================================*/
+
+.carousel-inner img {
+    /*-webkit-filter: grayscale(90%);*/
+    /*filter: grayscale(90%); !* make all photos black and white *!*/
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+/*Desktop image size*/
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    height:800px;
+}
+
+/*Handle image responsiveness when mobile*/
+@media only screen and (max-width: 500px) {
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img {
+        width: 100%; /* Set width to 100% */
+        margin: auto;
+        height:auto;
+    }
+}
+
+/*===========================================================================================================================*/
+/* TESTIMONIAL CAROUSEL STYLING */
+/*===========================================================================================================================*/
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+}
+
+.carousel-indicators li {
+    border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+    background-color: #f4511e;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+
+/*===========================================================================================================================*/
+/* ICON SLIDE IN EFFECTS*/
+/*===========================================================================================================================*/
+
+/* Icon Slide In effects */
+.slideanim {
+    visibility:hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*===========================================================================================================================*/
+/* VARIOUS SECTION STYLES */
+/*===========================================================================================================================*/
+
+/* ABOUT ==================================================== */
+
+#about, #values {
+    background-color: #FFFFFF;
+    color: black;
+}
+/*About Icons*/
+.about {
+    color: #AC0040;
+    font-size: 100px;
+}
+
+/* SERVICES ==================================================== */
+
+#services {
+    background-color: #AC0040;
+    color: black;
+}
+
+/* Services h2 styling */
+.yellow {
+    color: #FBB024;
+}
+
+/* Services h4 styling */
+.white {
+    color: #FFFFFF;
+}
+
+/* Services Icon Styling */
+.servicesIcons {
+    color: white;
+    font-size: 80px;
+}
+
+/* TESTIMONIALS ================================================= */
+
+#tesitmonials {
+    /*background-color: #2d4780;*/
+}
+
+#myCarousel {
+    /*background-color: yellow;*/
+}
+
+.glyphicon-chevron {
+    color: red;
+}
+
+/* CONTACT ======================================================*/
+
+#contact {
+    background-color: #AC0040;
+    color: #FFFFFF;
+}
+
+/*Contact Icons*/
+.contact {
+    color: #FBB024;
+    font-size: 30px;
+}
+
+/*Page Buttons*/
+.btn-default {
+    background-color: #FBB024;
+    border-color: #FBB024;
+    border-radius:0;
+}
+
+/* FOOTER ======================================================= */
+
+footer {
+    background-color: #AC0040;
+}
+
+/* Footer Arrow */
+.footarrow {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FBB024;
+}
+
+/*Footer Social Icons*/
+.footicon {
+    color: #FFFFFF;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*===========================================================================================================================*/
+/*THUMBNAILS*/
+/*===========================================================================================================================*/
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+
+/*===========================================================================================================================*/
+/*TODO: EVERYTHING BELOW HERE IS STILL IN TESTING PHASE*/
+/*===========================================================================================================================*/
+
+/* Icons Styling */
+.glyphicon {
+    font-size: 100px;
+}
+
+
+.login {
+    font-size: 15px;
+}
+
+
+/*Containers with no padding*/
+.fullscreen {
+    padding: 0;
+}
+
+/*Containers with padding*/
+.pad {
+    padding: 60px 50px;
+}
+
+/* h4 no margin */
+.noMarginBottom {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
+
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #AC0040;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #AC0040;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+/*===========================================================================================================================*/
+/*FORM Styling*/
+form {
+    padding:20px;
+    width:35%;
+    position: absolute;
+    bottom: 500px;
+    right: 70px;
+    background-color: #AC0040;
+    color: #FFFFFF;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+/*Input Box square corners*/
+.form-control {
+    border-radius: 0;
+}
+
+
+/*TEMPORARY TODO*/
+.logintext {
+    font-family: Montserrat, sans-serif;
+    z-index: 9999;
+    font-weight: 600;
+    color: #FBB024;
+}
+
+/*Handle image responsiveness when mobile*/
+@media only screen and (max-width: 500px) {
+    form {
+        width: 100%; /* Set width to 100% */
+        position: static;
+        bottom: 0;
+        right: 0;
+
+    }
+}
+
+/*Position this relative so form can be positioned where I want it*/
+.carousel-inner {
+    position: relative;
+}
+
+
+/* Icons Styling */
+.glyphicon {
+    font-size: 100px;
+}
+
+
+.login {
+    font-size: 15px;
+}
+
+/*===========================================================================================================================*/
+
+/* Column styling */
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}

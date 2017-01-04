@@ -97,7 +97,7 @@ a {
 /* Left side Footer Links styling */
 a {
     color: black;
-    font-size:12px;
+    font-size:15px;
 }
 
 /* Right side Footer Links styling */
@@ -132,5 +132,7 @@ a:hover {
     background-color: #009688;
     color: white;
 }
+
+
 
 

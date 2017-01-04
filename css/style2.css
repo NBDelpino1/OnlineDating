@@ -1,0 +1,36 @@
+/* #1 of 2: Make image responsive to all browser sizes */
+#hero {
+
+    background: url("AdobeStock_80526038.jpeg") no-repeat left top;
+    background-size: 100%;
+    height:650px;
+
+}
+
+/* #2 0f 2: Reduce image height when mobile so content isnt pushed down too far */
+@media only screen and (max-width: 500px) {
+
+    #hero {
+        height:200px;
+    }
+
+}
+
+/* Hamburger color (Need to add color due to background transparency) */
+.navbar-toggle .icon-bar {
+
+    background-color: black;
+}
+
+
+
+/*#security {*/
+
+    /*background: url("SecurityImages.png") no-repeat center top;*/
+    /*background-size: 25%;*/
+    /*height:80px;*/
+
+
+/*}*/
+
+

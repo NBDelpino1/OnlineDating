@@ -5,162 +5,284 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Match.com</title>
-    <!-- Latest compiled and minified CSS -->
+    <title>Match.com Bootstrap</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- My CSS -->
-    <link href="./css/style.css" rel="stylesheet">
-
+    <link href="./css/style3.css" rel="stylesheet">
 </head>
-<body>
-<!-- Main Container -->
-    <div class="container" id="main">
 
-        <!-- Navbar -->
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-fixed-top">
         <div class="container">
-            <nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Match</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Main Image -->
-        <div class="container">
-            <img src="images/landing.jpeg" alt="Landing image" class="mainImage">
-        </div>
-
-        <!-- Center Links Container -->
-        <div class="container text-right" id="centerLinksContainer">
-            <div class="row">
-                <div class="col-sm-6 text-center" id="leftCenterLinksColumn">
-                    <a class="leftCenterLink"><strong>About</strong></a>
-                    <a class="leftCenterLink"><strong>Testimonials</strong></a>
-                    <a class="leftCenterLink"><strong>Tour</strong></a>
-                    <a class="leftCenterLink"><strong>Espanol</strong></a>
-                </div>
-                <div class="col-sm-6 text-right" id="rightCenterLinksColumn">
-                    <a href="#"><i class="fa fa-youtube" style="font-size:40px"></i></a>
-                    <a href="#"><i class="fa fa-twitter-square" style="font-size:40px"></i></a>
-                    <a href="#"><i class="fa fa-facebook-official" style="font-size:40px"></i></a>
-                </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MATCH</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#tesitmonials">TESTIMONIALS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#login">LOGIN <span class="glyphicon glyphicon-user login" aria-hidden="true"></span></a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <!-- Secondary Image -->
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-sm-12">
-                    <!--class="mainImage"-->
-                    <!--TODO - Need to make this image responsive - adding mainImage class works on mobile but not desktop-->
-                    <img src="images/fakeauth.png">
-                </div>
+    <!-- Hero Section -->
+    <div class="container-fluid fullscreen">
+        <!-- Wrapper for image -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/AdobeStock_80526038.jpeg" alt="Couple">
             </div>
         </div>
+    </div>
 
-        <!-- Footer -->
-        <!--TODO - Need to improve on column layout when mobile - as is columns are stacked on ontop the other - dont like that-->
-        <div class="container">
-            <nav class="navbar navbar-default" id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <ul style="list-style-type:none">
-                                <li><a>About Match</a></li>
-                                <li><a>Why Match</a></li>
-                                <li><a>Match Tour</a></li>
-                                <li><a>Testimonials</a></li>
-                                <li><a>Match Espanol</a></li>
-                                <li><a>Match Subscription</a></li>
-                                <li><a>Match Promotions</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3">
-                            <ul style="list-style-type:none">
-                                <li><a>Match Careers</a></li>
-                                <li><a>Affiliates</a></li>
-                                <li><a>Terms & Conditions</a></li>
-                                <li><a>Safety Tips</a></li>
-                                <li><a>Privacy</a></li>
-                                <li><a>Compatible Browsers</a></li>
-                                <li><a>Help</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3">
-                            <ul style="list-style-type:none">
-                                <li><a>Asian Dating</a></li>
-                                <li><a>Black Dating</a></li>
-                                <li><a>Christian Dating</a></li>
-                                <li><a>Senior Dating</a></li>
-                                <li><a>Jewish Dating</a></li>
-                                <li><a>Hispanic Dating</a></li>
-                                <li><a>Local Dating</a></li>
-                                <li><a>Match Members</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-3">
-                            <ul style="list-style-type:none">
-                                <li><a class="rightSideFooterLinks">Match Blog</a></li>
-                                <li><a class="rightSideFooterLinks">Dating Advice</a></li>
-                                <li><a class="rightSideFooterLinks">First Dates</a></li>
-                                <li><a class="rightSideFooterLinks">Relationship Advice</a></li>
-                                <li><a class="rightSideFooterLinks">Dating Tips</a></li>
-                                <li><a class="rightSideFooterLinks">Date Ideas</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <!--Login Form-->
-        <div class="container" id="loginform">
-            <form>
-                <h2>Member login</h2>
-                <div class="form-group">
-                    <label for="email">Email address:</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox"> Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-default btn-block "><span class="glyphicon glyphicon-log-in"></span> Login</button>
-                <br>
-                <div class="form-group text-right">
-                   <a>Register here</a>
-                </div>
-            </form>
-        </div>
+    <!--Login Form-->
+    <div id="loginForm" class="container">
+        <form>
+            <h3 class="logintext">MEMBER LOGIN</h3>
+            <div class="form-group">
+                <label for="email">EMAIL ADDRESS</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">PASSWORD</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <div class="rememberMe">
+                <label for="pwd"><a class="yellow">Register Now</a></label>
+            </div>
+            <button type="submit" class="btn btn-default">SUBMIT</button>
+        </form>
 
     </div>
+
+    <div class="container">
+        <!-- About Section -->
+        <div id="about" class="container-fluid pad">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2 >ABOUT US</h2>
+                    <p>Dr. Delpino is a clinical psychologist and author of eight books on love,
+                        marriage and emotional health. During 35 years of counseling thousands of married couples,
+                        Dr. Delpino observed a set of characteristics that seemed to be present in all successful relationships.
+                        He called them the 29 Dimensions of Compatibility. After extensive research involving thousands of married couples,
+                        Dr. Delpino confirmed that these dimensions were indeed highly predictive of relationship success and could be used to match singles.
+                        Ten years later, eHarmony's compatibility matching is responsible for nearly 4% of U.S. marriages.*</p>
+                    <button class="btn btn-default btn-lg">Get in Touch</button>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fa fa-building-o about slideanim" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="values" class="container-fluid pad">
+            <div class="row">
+                <div class="col-sm-4">
+                    <i class="fa fa-handshake-o about slideanim" aria-hidden="true"></i>
+                </div>
+                <div class="col-sm-8">
+                    <h2>OUR MISSION</h2>
+                    <p>At Match, we believe you deserve to find love – true love that comes with a lasting relationship.
+                        Because of this, we are committed to assisting singles everywhere in their search to find love and romantic fulfillment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="container-fluid pad text-center">
+        <h2 class="yellow">SERVICES</h2>
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <i class="fa fa-search-plus servicesIcons" aria-hidden="true"></i>
+                <h4 class="white">FIND A MATCH</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa fa-heart-o servicesIcons" aria-hidden="true"></i>
+                <h4 class="white">DATING ADVICE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa fa-users servicesIcons" aria-hidden="true"></i>
+                <h4 class="white">RELATIONSHIP ADVICE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <i class="fa fa-pencil servicesIcons" aria-hidden="true"></i>
+                <h4 class="white">DATING TIPS</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa fa-question-circle-o servicesIcons" aria-hidden="true"></i>
+                <h4 class="white">DATE IDEAS</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa fa-calendar-check-o servicesIcons" aria-hidden="true"></i>
+                <h4 class="white">FIRST DATES</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section-->
+    <div id="tesitmonials" class="container-fluid pad text-center">
+        <h2>TESTIMONIALS</h2>
+        <div class="row text-center">
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="images/match2.jpg" alt="Paris">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="images/match3.jpg" alt="New York">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="thumbnail">
+                    <img src="images/match4.jpg" alt="San Francisco">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Carousel -->
+    <h2 class="text-center noMarginBottom">What our customers say</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <h4>" Never thought we would find love online, we are glad we took the chance!! "<br><span style="font-style:normal;">.....Yavi Padilla &amp Eva Sanchez, Brooklyn NY</span></h4>
+            </div>
+            <div class="item">
+                <h4>" We were truly blessed to find a place where we could connect and eventually become soul mates "<br><span style="font-style:normal;">James and John Parker, Seattle WA</span></h4>
+            </div>
+            <div class="item">
+                <h4>" 4 months in and we still can't believe it. This site works hard to make sure like minded people are connected "<br><span style="font-style:normal;">Jamie Jesip &amp Trey Loghorn, Atlanta GA</span></h4>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container-fluid pad">
+        <h2 class="text-center yellow">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker contact"></span> Orlando FL</p>
+                <p><span class="glyphicon glyphicon-phone contact"></span> 407-907-9712</p>
+                <p><span class="glyphicon glyphicon-envelope contact"></span> nbdelpino1@yaho.com</p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up footarrow"></span>
+        </a>
+        <p>
+            <a href="sass.html"> <i class="fa fa-youtube footicon" ></i></a>
+            <a href="sass.html"><i class="fa fa-twitter-square footicon" ></i></a>
+            <a href="sass.html"><i class="fa fa-facebook-official footicon"></i></a>
+        </p>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
 </body>
 </html>
-
-
-
-
-
