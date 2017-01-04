@@ -33,6 +33,7 @@ h2 {
     color: #AC0040;
     font-weight: 600;
     margin-bottom: 30px;
+    letter-spacing: 4px;
 }
 
 /* h4 General Styling */
@@ -42,6 +43,7 @@ h4 {
     color: #AC0040;
     font-weight: 400;
     margin-bottom: 30px;
+    letter-spacing: 4px;
 }
 
 /* h4 no margin top or bottom */
@@ -236,6 +238,14 @@ h4 {
     font-size: 80px;
 }
 
+
+/* Navbar Links change Color on hover */
+.serviceIcon:hover {
+    color: #FBB024;
+}
+
+
+
 /*===========================================================================================================================*/
 /* TESTIMONIALS SECTION */
 /*===========================================================================================================================*/
@@ -248,6 +258,7 @@ h4 {
 /*h4 Styling*/
 .blackText {
     color: black;
+    letter-spacing: normal;
 }
 
 /* Thumnail Styling*/
@@ -314,6 +325,8 @@ footer {
     background-color: #FBB024;
     border-color: #FBB024;
     border-radius:0;
+    width:150px;
+    letter-spacing: 4px;
 }
 
 /*===========================================================================================================================*/
