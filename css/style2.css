@@ -1,5 +1,5 @@
 /*===========================================================================================================================*/
-/* BODY / GENRAL STYLING */
+/* BODY GENERAL STYLING */
 /*===========================================================================================================================*/
 
 /* General Font & Line Height */
@@ -60,7 +60,63 @@ h4 {
 }
 
 /*===========================================================================================================================*/
-/* NAVBAR STYLING */
+/* PAGE BUTTONS */
+/*===========================================================================================================================*/
+
+/* Button Styling */
+.btn-default {
+    background-color: #FBB024;
+    border-color: #FBB024;
+    border-radius:0;
+    width:150px;
+    letter-spacing: 4px;
+}
+
+
+/*===========================================================================================================================*/
+/* SLIDE IN EFFECTS*/
+/*===========================================================================================================================*/
+
+/* Hide Icons Initially */
+.slideanim {
+    visibility:hidden;
+}
+
+/* Slide Icons Into View Action*/
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*===========================================================================================================================*/
+/* NAVBAR SECTION STYLING */
 /*===========================================================================================================================*/
 
 /* General Navbar Styling */
@@ -103,18 +159,72 @@ h4 {
 }
 
 /*===========================================================================================================================*/
-/* PAGE BUTTONS */
+/* CAROUSEL SECTION */
 /*===========================================================================================================================*/
-
-/* Button Styling */
-.btn-default {
-    background-color: #FBB024;
-    border-color: #FBB024;
-    border-radius:0;
-    width:150px;
-    letter-spacing: 4px;
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
 }
 
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.carousel-caption {
+    color: #FBB024;
+}
+/*===========================================================================================================================*/
+/* USER INFO SECTION */
+/*===========================================================================================================================*/
+
+/* Icons Styling */
+.gender {
+    color: #FBB024;
+    font-size: 80px;
+    font-weight: 800;
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+.gender:hover {
+    color: #AC0040;
+}
+/* Container With Padding */
+.containerWithPadding {
+    padding: 60px 50px;
+}
+
+/*TODO - This is a temp bandaid to align About header center when mobile*/
+@media screen and (max-width: 768px) {
+    .quickFix {
+        text-align: center;
+    }
+}
+
+/* Padding for column so unputs line up with Right Side Inputs at bottom */
+.minorBottompad {
+    padding-bottom:12px;
+}
+
+/*===========================================================================================================================*/
+/* POSSIBLE MATCHES SECTION */
+/*===========================================================================================================================*/
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
 
 /*===========================================================================================================================*/
 /* CONTACT SECTION */
@@ -161,6 +271,10 @@ footer {
     color: #FBB024;
 }
 
+/* h2 styling */
+.yellowText {
+    color: #FBB024;
+}
 /*===========================================================================================================================*/
 /* END */
 /*===========================================================================================================================*/
@@ -171,34 +285,13 @@ footer {
 
 
 
-/*===========================================================================================================================*/
-/* CAROUSEL */
-/*===========================================================================================================================*/
-.carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-    min-height:200px;
-}
 
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none;
-    }
-}
 
-/*===========================================================================================================================*/
-/* THUMBNAIL */
-/*===========================================================================================================================*/
 
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-}
 
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-}
+
+
+
+
+
+

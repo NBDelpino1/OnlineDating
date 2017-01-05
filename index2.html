@@ -6,238 +6,327 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Match.com Index2 Bootstrap</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Material Design Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <!-- My CSS -->
     <link href="css/style2.css" rel="stylesheet">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<!-- Navbar Section -->
-<nav class="navbar navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">MATCH</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#tesitmonials">TESTIMONIALS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#">LOGIN <span class="glyphicon glyphicon-user navIcon" aria-hidden="true"></span></a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!--========================================================================================================================-->
-<!--========================================================================================================================-->
-
-
-<!-- Carousel Section -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
-            <div class="carousel-caption">
-                <h3>Sell $</h3>
-                <p>Money Money.</p>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MATCH</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <!--<li><a href="index.html">SERVICES</a></li>-->
+                    <!--<li><a href="index.html">TESTIMONIALS</a></li>-->
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="index.html">LOG OUT <span class="glyphicon glyphicon-user navIcon" aria-hidden="true"></span></a></li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="item">
-            <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-            <div class="carousel-caption">
-                <h3>More Sell $</h3>
-                <p>Lorem ipsum...</p>
-            </div>
-        </div>
-    </div>
+    <!-- HERO CAROUSEL SECTION -->
+    <div id="myCarousel" class="carousel" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<!--========================================================================================================================-->
-
-<!-- Possible Matches Section -->
-<div class="container-fluid text-center bg-grey">
-    <h2>Portfolio</h2>
-    <h4>What we have created</h4>
-
-    <!--Row #1-->
-    <div class="row text-center">
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="paris.jpg" alt="Paris">
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="newyork.jpg" alt="New York">
-                <p><strong>New York</strong></p>
-                <p>We built New York</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="sanfran.jpg" alt="San Francisco">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="sanfran.jpg" alt="San Francisco">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
-            </div>
-        </div>
-    </div>
-
-    <!--Row #2-->
-    <div class="row text-center">
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="paris.jpg" alt="Paris">
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="newyork.jpg" alt="New York">
-                <p><strong>New York</strong></p>
-                <p>We built New York</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="sanfran.jpg" alt="San Francisco">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="sanfran.jpg" alt="San Francisco">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
-            </div>
-        </div>
-    </div>
-
-    <!--Row #3-->
-    <div class="row text-center">
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="paris.jpg" alt="Paris">
-                <p><strong>Paris</strong></p>
-                <p>Yes, we built Paris</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="newyork.jpg" alt="New York">
-                <p><strong>New York</strong></p>
-                <p>We built New York</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="sanfran.jpg" alt="San Francisco">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="thumbnail">
-                <img src="sanfran.jpg" alt="San Francisco">
-                <p><strong>San Francisco</strong></p>
-                <p>Yes, San Fran is ours</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--========================================================================================================================-->
-
-
-
-<!--========================================================================================================================-->
-<!--========================================================================================================================-->
-<!-- Contact Section -->
-<div id="contact" class="container-fluid containerWithPadding">
-    <h2 class="text-center yellowText">CONTACT US</h2>
-    <div class="row">
-        <div class="col-sm-5">
-            <p>Please let us know how we can help you!</p>
-            <p><span class="glyphicon glyphicon-map-marker contact"></span> Orlando FL</p>
-            <p><span class="glyphicon glyphicon-phone contact"></span> 407-907-9712</p>
-            <p><span class="glyphicon glyphicon-envelope contact"></span> Nbdelpino1@yahoo.com</p>
-        </div>
-        <div class="col-sm-7">
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="emailContact" name="emailContact" placeholder="Email" type="email" required>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images2/CAR1.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <h1>Find the person of your dreams today</h1>
+                    <p>We can help you do just that</p>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">SEND</button>
+
+            <div class="item">
+                <img src="images2/CAR2.jpg" alt="Image">
+                <div class="carousel-caption">
+                    <h1>Love is a journey of the heart</h1>
+                    <p>You can take your first step here</p>
                 </div>
             </div>
         </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-</div>
 
-<!-- Footer -->
-<footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-        <span class="glyphicon glyphicon-chevron-up footerNavArrow"></span>
-    </a>
-    <p>
-        <a href="#"> <i class="fa fa-youtube footerIcon" ></i></a>
-        <a href="#"><i class="fa fa-twitter-square footerIcon" ></i></a>
-        <a href="#"><i class="fa fa-facebook-official footerIcon"></i></a>
-    </p>
-</footer>
+    <!-- USER INFO SECTION -->
+    <div class="container-fluid containerWithPadding">
+        <!-- LEFT SIDE OF USER INFO SECTION-FORM -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="quickFix"><u>YOUR INFO</u></h2>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <h4>I am a: <i class="zmdi zmdi-male-alt gender"></i><i class="zmdi zmdi-female gender"></i></h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <h4>Seeking a: <i class="zmdi zmdi-male-alt gender"></i><i class="zmdi zmdi-female gender"></i></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12"><div class="form-group">
+                            <label> First Name</label>
+                            <input type="text" class="form-control" id="memberName">
+                        </div></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6"><div class="form-group">
+                            <label>Postal Code</label>
+                            <input type="password" class="form-control" id="memberPostalCode">
+                        </div></div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                            <label for="sel1">Country</label>
+                            <select class="form-control" id="sel1">
+                                <option>United States</option>
+                                <option>Britian</option>
+                                <option>France</option>
+                                <option>China</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--My Scripts-->
-<script src="js/app.js"></script>
+            <!-- RIGHT SIDE OF USER INFO SECTION-FORM -->
+            <div class="col-sm-6">
+                <h2 class="quickFix minorBottompad"><u>QUESTIONAIRE</u></h2>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1">What is your favorite way to spend an evening during your workweek?</label>
+                                <select class="form-control" id="question1">
+                                    <option>Select One</option>
+                                    <option>Watching TV at home</option>
+                                    <option>Dinner and a movie</option>
+                                    <option>Out clubing</option>
+                                    <option>Out with friends</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1">What is your favorite way to spend an evening during your days off from work?</label>
+                                <select class="form-control" id="question2">
+                                    <option>Select One</option>
+                                    <option>Watching TV at home</option>
+                                    <option>Dinner and a movie</option>
+                                    <option>Out clubing</option>
+                                    <option>Out with friends</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1">What are your favorite ways to spend a vacation?</label>
+                                <select class="form-control" id="question3">
+                                    <option>Select One</option>
+                                    <option>On the couch at home</option>
+                                    <option>On the couch at the resort</option>
+                                    <option>Cruise</option>
+                                    <option>Trip</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1">Is participation in family gatherings important to you?</label>
+                                <select class="form-control" id="question4">
+                                    <option>Select One</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1">Which do you admire most?</label>
+                                <select class="form-control" id="question5">
+                                    <option>Select One</option>
+                                    <option>Honesty</option>
+                                    <option>Bravery</option>
+                                    <option>Kindness</option>
+                                    <option>Outgoingness</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sel1">Do you have any children?</label>
+                                <select class="form-control" id="question6">
+                                    <option>Select One</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- POSSIBLE MATCHES SECTION -->
+    <div class="container-fluid text-center">
+        <h2>POTENTIAL MATCHES</h2>
+        <h4>These members are closely matched to you</h4>
+        <!-- TOP ROW POSSIBLE MATCHES SECTION -->
+        <div class="row text-center slideanim">
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L1.jpg" alt="Paris">
+                    <p><strong>Denise Plumber</strong></p>
+                    <p>Orlando FL</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L2.jpg" alt="New York">
+                    <p><strong>Zen Zu</strong></p>
+                    <p>Orlando FL</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L3.jpg" alt="San Francisco">
+                    <p><strong>Rachel Right</strong></p>
+                    <p>Ocoee FL</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L4.png" alt="San Francisco">
+                    <p><strong>Melissa Myers</strong></p>
+                    <p>Kissimee FL</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTTOM ROW POSSIBLE MATCHES SECTION-->
+        <div class="row text-center slideanim">
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L5.jpg" alt="Paris">
+                    <p><strong>Benedict Graham</strong></p>
+                    <p>Orlando FL</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L6.jpg" alt="New York">
+                    <p><strong>Jim Tassleworth</strong></p>
+                    <p>Ocoee FL</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L7.jpg" alt="San Francisco">
+                    <p><strong>Rick Remington</strong></p>
+                    <p>Kissimee FL</p>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <img src="images2/L8.jpg" alt="San Francisco">
+                    <p><strong>Kandi Cute</strong></p>
+                    <p>Orlando FL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact" class="container-fluid containerWithPadding">
+        <h2 class="text-center yellowText">CONTACT US</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Please let us know how we can help you!</p>
+                <p><span class="glyphicon glyphicon-map-marker contact"></span> Orlando FL</p>
+                <p><span class="glyphicon glyphicon-phone contact"></span> 407-907-9712</p>
+                <p><span class="glyphicon glyphicon-envelope contact"></span> Nbdelpino1@yahoo.com</p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="emailContact" name="emailContact" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up footerNavArrow"></span>
+        </a>
+        <p>
+            <a href="#"> <i class="fa fa-youtube footerIcon" ></i></a>
+            <a href="#"><i class="fa fa-twitter-square footerIcon" ></i></a>
+            <a href="#"><i class="fa fa-facebook-official footerIcon"></i></a>
+        </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--My Scripts-->
+    <script src="js/app.js"></script>
 
 </body>
 </html>
+
+<!-- UI CREATED BY NICK DELPINO -->
 
