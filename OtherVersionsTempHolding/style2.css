@@ -1,0 +1,297 @@
+/*===========================================================================================================================*/
+/* BODY GENERAL STYLING */
+/*===========================================================================================================================*/
+
+/* General Font & Line Height */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.8;
+}
+
+/* Container With Padding */
+.containerWithPadding {
+    padding: 60px 50px;
+}
+
+/* Container Without Padding */
+.containerWithoutPadding {
+    padding: 0;
+}
+
+/* Column Styling */
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+/*TODO - This is a temp bandaid to align About header center when mobile*/
+@media screen and (max-width: 768px) {
+    #quickFix {
+        text-align: center;
+    }
+}
+
+/* h2 General Styling */
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #AC0040;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+/* h4 General Styling */
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #AC0040;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+/* h4 no margin top or bottom */
+.h4_WithoutMarginTopBottom {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*===========================================================================================================================*/
+/* PAGE BUTTONS */
+/*===========================================================================================================================*/
+
+/* Button Styling */
+.btn-default {
+    background-color: #FBB024;
+    border-color: #FBB024;
+    border-radius:0;
+    width:150px;
+    letter-spacing: 4px;
+}
+
+
+/*===========================================================================================================================*/
+/* SLIDE IN EFFECTS*/
+/*===========================================================================================================================*/
+
+/* Hide Icons Initially */
+.slideanim {
+    visibility:hidden;
+}
+
+/* Slide Icons Into View Action*/
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/*===========================================================================================================================*/
+/* NAVBAR SECTION STYLING */
+/*===========================================================================================================================*/
+
+/* General Navbar Styling */
+.navbar {
+    margin-bottom: 0;
+    background-color: #AC0040;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Navbar Logo Color */
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    color: #FBB024;
+}
+
+/* Navbar Links Color */
+.navbar li a, .navbar .navbar-brand {
+    color: #fff;
+}
+
+/* Navbar Links change Color on hover */
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #FBB024 !important;
+    background-color: #fff !important;
+}
+
+/*  Navbar Hamburger Color */
+.navbar-toggle .icon-bar {
+    background-color: #FFFFFF;
+}
+
+/* Icons Styling */
+.navIcon {
+    font-size: 15px;
+}
+
+/*===========================================================================================================================*/
+/* CAROUSEL SECTION */
+/*===========================================================================================================================*/
+.hero-wrapper img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.carousel-caption {
+    color: #FBB024;
+}
+/*===========================================================================================================================*/
+/* USER INFO SECTION */
+/*===========================================================================================================================*/
+
+/* Icons Styling */
+.gender {
+    color: #FBB024;
+    font-size: 80px;
+    font-weight: 800;
+    margin-right:10px;
+    margin-left: 10px;
+}
+
+.gender:hover {
+    color: #AC0040;
+}
+/* Container With Padding */
+.containerWithPadding {
+    padding: 60px 50px;
+}
+
+/*TODO - This is a temp bandaid to align About header center when mobile*/
+@media screen and (max-width: 768px) {
+    .content-header {
+        text-align: center;
+    }
+}
+
+/* Padding for column so unputs line up with Right Side Inputs at bottom */
+.minorBottompad {
+    padding-bottom:12px;
+}
+
+/*===========================================================================================================================*/
+/* POSSIBLE MATCHES SECTION */
+/*===========================================================================================================================*/
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/*===========================================================================================================================*/
+/* CONTACT SECTION */
+/*===========================================================================================================================*/
+
+/* Div Styling */
+#contact {
+    background-color: #AC0040;
+    color: #FFFFFF;
+}
+
+/* Icons Styling */
+.contact {
+    color: #FBB024;
+    font-size: 30px;
+}
+
+/*===========================================================================================================================*/
+/* FOOTER SECTION */
+/*===========================================================================================================================*/
+
+/* Background Color */
+footer {
+    background-color: #AC0040;
+}
+
+/* Navigation Arrow */
+.footerNavArrow {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #FBB024;
+}
+
+/* Icons Styling */
+.footerIcon {
+    color: #FFFFFF;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Footer Icons Change Color on Hover */
+.footerIcon:hover {
+    color: #FBB024;
+}
+
+/* h2 styling */
+.yellowText {
+    color: #FBB024;
+}
+/*===========================================================================================================================*/
+/* END */
+/*===========================================================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
