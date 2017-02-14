@@ -200,7 +200,7 @@ h4 {
 
 /*TODO - This is a temp bandaid to align About header center when mobile*/
 @media screen and (max-width: 768px) {
-    .quickFix {
+    .content-header {
         text-align: center;
     }
 }
