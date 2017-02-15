@@ -1,9 +1,3 @@
-/*===========================================================================================================================*/
-/* BODY / GENRAL STYLING */
-/*===========================================================================================================================*/
-
-
-
 /* General Font & Line Height */
 body {
     font-family: 'Abril Fatface', cursive;
@@ -23,8 +17,6 @@ body {
         margin: 25px 0;
     }
 }
-
-
 
 /* h2 General Styling */
 h2 {
@@ -93,7 +85,6 @@ h4 {
     font-size: 15px;
 }
 
-
 /*===========================================================================================================================*/
 /* PAGE BUTTONS */
 /*===========================================================================================================================*/
@@ -109,11 +100,6 @@ h4 {
 /*===========================================================================================================================*/
 /* FORM */
 /*===========================================================================================================================*/
-
-/* Help Position Form */
-/*body {*/
-    /*position: relative;*/
-/*}*/
 
 .testpoistion {
     position: relative;
@@ -131,8 +117,6 @@ form {
     width:30%;
     background-color:rgba(9,62,77,0.83);
 }
-
-
 
 /* Form Position When Mobile */
 @media only screen and (max-width: 500px) {
@@ -158,8 +142,6 @@ form {
 .formSecText {
     font-size: 10px;
 }
-
-
 
 /*===========================================================================================================================*/
 /* HERO STYLING */
@@ -267,7 +249,6 @@ form {
         -webkit-transform: translateY(0%);
     }
 }
-
 /*===========================================================================================================================*/
 /* ABOUT & MISSION SECTION */
 /*===========================================================================================================================*/
@@ -287,7 +268,6 @@ form {
     color: #093E4D;
     font-size: 100px;
 }
-
 /*===========================================================================================================================*/
 /* SERVICES SECTION */
 /*===========================================================================================================================*/
@@ -295,15 +275,8 @@ form {
 /* Div Styling */
 #services {
     background-image: url(../images/bg2.jpg);
-background-repeat: no-repeat;
- background-size: cover;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6d0019+0,8f0222+56,a90329+100 */
-    /*background: rgb(109,0,25); !* Old browsers *!*/
-    /*background: -moz-linear-gradient(top,  rgba(109,0,25,1) 0%, rgba(143,2,34,1) 56%, rgba(169,3,41,1) 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  rgba(109,0,25,1) 0%,rgba(143,2,34,1) 56%,rgba(169,3,41,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  rgba(109,0,25,1) 0%,rgba(143,2,34,1) 56%,rgba(169,3,41,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d0019', endColorstr='#a90329',GradientType=0 ); !* IE6-9 *!*/
-
+    background-repeat: no-repeat;
+    background-size: cover;
     color: black;
     font-family: 'Abril Fatface', cursive;
 }
@@ -331,11 +304,6 @@ background-repeat: no-repeat;
 .serviceIcon:hover {
     color: #FBB024;
 }
-
-
-
-
-
 /*===========================================================================================================================*/
 /* TESTIMONIALS SECTION */
 /*===========================================================================================================================*/
@@ -367,7 +335,6 @@ background-repeat: no-repeat;
 .caro-testimonials {
     height:auto;
 }
-
 
 .tint {
     background: rgba(0, 0, 0, 0.6);
