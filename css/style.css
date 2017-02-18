@@ -2,7 +2,6 @@ body {
     font-family: 'Abril Fatface', cursive;
     line-height: 1.8;
     background-color:white;
-    padding-top: 70px;
 }
 
 h2 {
@@ -40,6 +39,13 @@ h4 {
     color: #fbb024;
 }
 
+.navbar-header {
+    font-size:2em;
+}
+
+.navbar-link {
+    font-size:1.5em;
+}
 .navbar-link:hover {
     color: #fbb024;
     background-color: #fff;
@@ -206,7 +212,13 @@ form {
 /*TODO - may have to adjust to fix column issues*/
 /* Div Styling */
 .about-row, .mission-row{
-    padding-top:10px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.about-mission-text {
+    font-size:16px;
+    color: rgba(9,62,77,.76);
 }
 
 /*===========================================================================================================================*/
@@ -291,18 +303,13 @@ footer {
 }
 /*===========================================================================================================================*/
 /* END */
-/*===========================================================================================================================*/
-/*TODO - add*/
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    padding-left:80px;
-    font-family: 'Abril Fatface', cursive;
-    font-size:36px;
-}
+/*!*===========================================================================================================================*!*/
+
 
 .content-header {
     font-family: 'Abril Fatface', cursive;
     color: #fbb024;
-    font-size:3.5em;
+    font-size:2.5em;
 }
 
 /*TODO - This is a temp bandaid to align About header center when mobile*/
@@ -312,19 +319,9 @@ footer {
     }
 }
 
-body {
-    font-family: 'Abril Fatface', cursive;
-}
 
-.temp-text {
-    font-size:1.25em;
-    color: grey;
-    letter-spacing:.5px;
-}
 
-.navbar li a, .navbar .navbar-brand {
-    font-size:1.5em;
-}
+
 
 
 
