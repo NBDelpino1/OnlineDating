@@ -1,88 +1,51 @@
-/* General Font & Line Height */
 body {
     font-family: 'Abril Fatface', cursive;
     line-height: 1.8;
     background-color:white;
 }
 
-/* Container Without Padding */
-.containerWithoutPadding {
-    padding: 0;
-}
-/*TODO -change*/
-/* Column Styling */
-@media screen and (max-width: 768px) {
-    .col-sm-4 {
-        text-align: center;
-        margin: 25px 0;
-    }
-}
-
-/* h2 General Styling */
 h2 {
     font-size: 24px;
-    color: #FBB024;
+    color: #fbb024;
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-/* h4 General Styling */
 h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #FBB024;
+    color: #fbb024;
     font-weight: 400;
     margin-bottom: 30px;
 }
 
-/* h4 no margin top or bottom */
-.h4_WithoutMarginTopBottom {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 /*===========================================================================================================================*/
 /* NAVBAR STYLING */
 /*===========================================================================================================================*/
-/*TODO -change*/
-/* General Navbar Styling */
 .navbar {
     margin-bottom: 0;
-    /*background-color: #AC0040;*/
-    background-color:rgba(9,62,77,0.83);
-    z-index: 9999;
-    border: 0;
-    font-size: 12px;
-    line-height: 1.42857143 !important;
-    border-radius: 0;
-    font-family: 'Abril Fatface', cursive;
     padding-top:10px;
     padding-bottom:10px;
+    border: 0;
+    border-radius: 0;
+    background-color:rgba(9,62,77,0.83);
+    z-index: 9999;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 12px;
+    line-height: 1.42857143 !important;
 }
 
-/* Navbar Logo Color */
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    color: #FBB024;
+.navbar-header, .navbar-link {
+    color: #fbb024;
 }
 
-/* Navbar Links Color */
-.navbar li a, .navbar .navbar-brand {
-    color: #fff;
+.navbar-link:hover {
+    color: #fbb024;
+    background-color: #fff;
 }
 
-/* Navbar Links change Color on hover */
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #FBB024 !important;
-    background-color: #fff !important;
-}
-
-/*  Navbar Hamburger Color */
-.navbar-toggle .icon-bar {
+.icon-bar {
     background-color: #FFFFFF;
-}
-
-/* Icons Styling */
-.navIcon {
-    font-size: 15px;
 }
 
 /*===========================================================================================================================*/
@@ -91,8 +54,8 @@ h4 {
 
 /* Button Styling */
 .btn-default {
-    background-color: #FBB024;
-    border-color: #FBB024;
+    background-color: #fbb024;
+    border-color: #fbb024;
     border-radius:0;
     width:150px;
 }
@@ -135,7 +98,7 @@ form {
 /* Member Login Text Styling*/
 .loginCTA {
     font-family: 'Abril Fatface', cursive;
-    color: #FBB024;
+    color: #fbb024;
 }
 
 /* Secondary Text Inside Form */
@@ -176,17 +139,17 @@ form {
 /* Carousel Controls */
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #FBB024;
+    color: #fbb024;
 }
 
 /* Carousel Indicators */
 .carousel-indicators li {
-    border-color: #FBB024;
+    border-color: #fbb024;
 }
 
 /* Carousel Indicators */
 .carousel-indicators li.active {
-    background-color: #FBB024;
+    background-color: #fbb024;
 }
 
 /* Carousel Comments Text Styling */
@@ -283,12 +246,12 @@ form {
 
 /* h2 styling */
 .yellowText {
-    color: #FBB024;
+    color: #fbb024;
 }
 
 /* h4 styling */
 .whiteText {
-    color: #FBB024;
+    color: #fbb024;
     font-size:2em;
 }
 
@@ -302,7 +265,7 @@ form {
 
 /* Navbar Links change Color on hover */
 .serviceIcon:hover {
-    color: #FBB024;
+    color: #fbb024;
 }
 /*===========================================================================================================================*/
 /* TESTIMONIALS SECTION */
@@ -351,7 +314,7 @@ form {
 
 /* Icons Styling */
 .contact {
-    color: #FBB024;
+    color: #fbb024;
     font-size: 30px;
 }
 
@@ -369,7 +332,7 @@ footer {
 .footerNavArrow {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #FBB024;
+    color: #fbb024;
 }
 
 /* Icons Styling */
@@ -384,7 +347,7 @@ footer {
 
 /* Footer Icons Change Color on Hover */
 .footerIcon:hover {
-    color: #FBB024;
+    color: #fbb024;
 }
 /*===========================================================================================================================*/
 /* END */
@@ -398,7 +361,7 @@ footer {
 
 .content-header {
     font-family: 'Abril Fatface', cursive;
-    color: #FBB024;
+    color: #fbb024;
     font-size:3.5em;
 }
 
