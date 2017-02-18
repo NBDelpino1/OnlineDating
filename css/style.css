@@ -2,6 +2,7 @@ body {
     font-family: 'Abril Fatface', cursive;
     line-height: 1.8;
     background-color:white;
+    padding-top: 70px;
 }
 
 h2 {
@@ -61,46 +62,40 @@ h4 {
 /*===========================================================================================================================*/
 /* FORM */
 /*===========================================================================================================================*/
-/*TODO -change*/
-.testpoistion {
-    position: relative;
-}
 
 form {
-    position: absolute;
-    top:20%;
-    left:35%;
-    right:35%;
+    margin:0 auto;
+    width:80%;
     color: #fff;
-    font-family: 'Abril Fatface', cursive;
     padding:20px;
-    /*width:500px;*/
-    width:30%;
+    font-family: 'Abril Fatface', cursive;
     background-color:rgba(9,62,77,0.83);
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left:-300px;
+    width: 600px;
 }
-/*TODO -change*/
-/* Form Position When Mobile */
-@media only screen and (max-width: 500px) {
-    form {
-        width: 100%; /* Set width to 100% */
-        position: static;
-        bottom: 60%;
 
+@media screen and (max-width: 480px) {
+    form {
+        position: static;
+        margin:0;
+        width:100%;
     }
 }
-/* Input Box Square Corners */
+
+/* Input Box */
 .form-control {
     border-radius: 0;
 }
 
-/* Member Login Text Styling*/
-.loginCTA {
+.form-header {
     font-family: 'Abril Fatface', cursive;
     color: #fbb024;
 }
 
-/* Secondary Text Inside Form */
-.formSecText {
+.form-text {
     font-size: 10px;
 }
 
@@ -165,10 +160,6 @@ form {
 }
 
 
-.carousel-inner {
-    height:700px;
-    overflow: hidden;
-}
 /*===========================================================================================================================*/
 /* ICON SLIDE IN EFFECTS*/
 /*===========================================================================================================================*/
